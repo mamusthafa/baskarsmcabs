@@ -71,7 +71,7 @@
         .sticky-btn.call { background-color: var(--primary-yellow); color: #000000; }
 
         @media (max-width: 900px) {
-            .footer-container { grid-template-columns: 1fr; }
+            .grid-4, .grid-3, .footer-container { grid-template-columns: 1fr !important; }
             .mobile-toggle { display: block; }
             .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
             .nav-menu.active { display: flex; }
@@ -85,6 +85,7 @@
             .logo-title { font-size: 1.1rem; }
             .logo-subtitle { font-size: 0.52rem; }
             .header .btn-yellow { padding: 6px 10px; font-size: 0.72rem; }
+            .grid-4, .grid-3, .footer-container { grid-template-columns: 1fr !important; gap: 20px; }
         }
         @media (max-width: 480px) {
             .header .btn-yellow { display: none; }
