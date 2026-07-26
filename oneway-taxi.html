@@ -123,6 +123,19 @@
             .nav-menu.active { display: flex; }
             .footer-container { grid-template-columns: 1fr; }
         }
+        @media (max-width: 650px) {
+            html, body { overflow-x: hidden !important; width: 100%; }
+            .header-container { padding: 8px 12px; gap: 8px; }
+            .logo { gap: 8px; }
+            .logo-icon { width: 36px; height: 36px; }
+            .logo-icon i { font-size: 1.1rem; }
+            .logo-title { font-size: 1.1rem; }
+            .logo-subtitle { font-size: 0.52rem; }
+            .header .btn-yellow { padding: 6px 10px; font-size: 0.72rem; }
+        }
+        @media (max-width: 480px) {
+            .header .btn-yellow { display: none; }
+        }
     </style>
 </head>
 <body>

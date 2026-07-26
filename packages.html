@@ -72,10 +72,23 @@
         .sticky-btn.call { background-color: var(--primary-yellow); color: #000000; }
 
         @media (max-width: 900px) {
-            .packages-grid, .footer-container { grid-template-columns: 1fr; }
+            .footer-container { grid-template-columns: 1fr; }
             .mobile-toggle { display: block; }
-            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; }
+            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
             .nav-menu.active { display: flex; }
+        }
+        @media (max-width: 650px) {
+            html, body { overflow-x: hidden !important; width: 100%; }
+            .header-container { padding: 8px 12px; gap: 8px; }
+            .logo { gap: 8px; }
+            .logo-icon { width: 36px; height: 36px; }
+            .logo-icon i { font-size: 1.1rem; }
+            .logo-title { font-size: 1.1rem; }
+            .logo-subtitle { font-size: 0.52rem; }
+            .header .btn-yellow { padding: 6px 10px; font-size: 0.72rem; }
+        }
+        @media (max-width: 480px) {
+            .header .btn-yellow { display: none; }
         }
     </style>
 </head>

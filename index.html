@@ -1282,6 +1282,8 @@
         @media (max-width: 900px) {
             .hero-container {
                 grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 15px;
             }
             .mobile-toggle {
                 display: block;
@@ -1304,18 +1306,71 @@
             .cta-container {
                 flex-direction: column;
                 text-align: center;
+                gap: 25px;
+                padding: 0 15px;
             }
             .cta-image-wrap {
+                flex-direction: column;
+                align-items: center;
                 justify-content: center;
+                width: 100%;
+                max-width: 100%;
             }
         }
 
         @media (max-width: 650px) {
-            .top-bar-right {
-                display: none;
+            .top-bar-container {
+                flex-direction: column;
+                gap: 6px;
+                text-align: center;
+                padding: 4px 10px;
+            }
+            .top-bar-left, .top-bar-right {
+                justify-content: center;
+                font-size: 0.72rem;
+            }
+            .header-container {
+                padding: 8px 12px;
+                gap: 8px;
+            }
+            .logo {
+                gap: 8px;
+            }
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+            }
+            .logo-icon i {
+                font-size: 1.1rem;
+            }
+            .logo-title {
+                font-size: 1.1rem;
+            }
+            .logo-subtitle {
+                font-size: 0.52rem;
+                letter-spacing: 0.5px;
+            }
+            .header .btn-yellow {
+                padding: 6px 12px;
+                font-size: 0.72rem;
+                white-space: nowrap;
             }
             .hero-headline h1 {
-                font-size: 1.85rem;
+                font-size: 1.55rem;
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
+            .hero-car-preview {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+                overflow: hidden;
+            }
+            .hero-car-preview img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
             }
             .hero-features {
                 grid-template-columns: repeat(2, 1fr);
@@ -1332,17 +1387,27 @@
                 gap: 16px;
             }
             .fleet-card {
-                padding: 12px;
+                padding: 14px;
                 border-radius: 14px;
             }
             .fleet-img-wrap {
-                height: 240px;
+                height: 220px;
                 border-radius: 10px;
             }
             .fleet-img-wrap img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+            .cta-car-img {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+            .badge-circle {
+                width: 90px;
+                height: 90px;
+                font-size: 0.58rem;
             }
             .packages-grid {
                 grid-template-columns: 1fr;
@@ -1354,6 +1419,12 @@
                 flex-direction: column;
                 gap: 8px;
                 text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .btn-yellow {
+                display: none;
             }
         }
     </style>
