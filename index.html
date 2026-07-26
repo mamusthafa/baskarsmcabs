@@ -1319,6 +1319,37 @@
         }
 
         @media (max-width: 650px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 0 10px;
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            .hero-form-card {
+                width: 100%;
+                max-width: 100%;
+                padding: 16px 12px;
+                box-sizing: border-box;
+                border-radius: 12px;
+            }
+            .form-tabs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 6px;
+                padding: 5px;
+                background-color: #f1f5f9;
+                border-radius: 8px;
+            }
+            .form-tab {
+                padding: 8px 4px;
+                font-size: 0.7rem;
+                white-space: normal;
+                word-break: break-word;
+                text-align: center;
+                line-height: 1.25;
+            }
             .top-bar-container {
                 flex-direction: column;
                 gap: 6px;
@@ -1361,14 +1392,15 @@
                 overflow-wrap: break-word;
             }
             .hero-car-preview {
-                width: 95%;
-                max-width: 95%;
+                width: 100%;
+                max-width: 100%;
                 margin-bottom: 20px;
                 overflow: hidden;
+                box-sizing: border-box;
             }
             .hero-car-preview img {
-                width: 95%;
-                max-width: 95%;
+                width: 100%;
+                max-width: 100%;
                 height: auto;
                 object-fit: contain;
             }
@@ -1400,8 +1432,8 @@
                 object-fit: cover;
             }
             .cta-car-img {
-                max-width: 95%;
-                width: 95%;
+                max-width: 100%;
+                width: 100%;
                 height: auto;
             }
             .badge-circle {
