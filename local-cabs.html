@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kanasu Cabs - Local Cab Rental & Taxi Service in Bangalore. Hourly packages (4 Hrs/40 KM, 8 Hrs/80 KM, 12 Hrs/120 KM) for city travel, shopping & business meetings.">
+    <meta name="keywords" content="Local Cab Bangalore, Local Taxi Rental Bangalore, Hourly Taxi Package Bangalore, City Cab Rental Bangalore, Kanasu Cabs Local">
+    <meta name="author" content="Kanasu Cabs">
+    <title>Local Hourly Cab Rentals in Bangalore - Kanasu Cabs | City Taxi Service</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --primary-yellow: #FFB800; --primary-yellow-hover: #e5a600; --dark-bg: #111418; --text-main: #212529; --text-muted: #6c757d; --border-color: #e2e8f0; --card-shadow: 0 10px 30px rgba(0,0,0,0.08); --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: #ffffff; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .top-bar { background-color: #0b0d0f; color: #b0b7c0; font-size: 0.85rem; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+        .top-bar-container { max-width: 1440px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-left i, .top-bar-item i { color: var(--primary-yellow); }
+        .top-bar-right { display: flex; gap: 24px; }
+
+        .header { background-color: #ffffff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .header-container { max-width: 1440px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: radial-gradient(circle at center, #1b4332 0%, #081c15 100%); border: 2px solid #2d6a4f; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+        .logo-icon i { color: var(--primary-yellow); font-size: 1.4rem; }
+        .logo-title { font-size: 1.45rem; font-weight: 800; color: #1b4332; }
+        .logo-title span { color: var(--primary-yellow); }
+        .logo-subtitle { font-size: 0.65rem; font-weight: 600; color: #555; text-transform: uppercase; }
+
+        .nav-menu { display: flex; align-items: center; gap: 22px; }
+        .nav-link { font-size: 0.88rem; font-weight: 600; color: #2c3e50; padding: 6px 0; transition: var(--transition); white-space: nowrap; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-yellow); }
+        .btn-yellow { background-color: var(--primary-yellow); color: #000000; font-weight: 700; font-size: 0.85rem; padding: 10px 22px; border-radius: 50px; border: none; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
+        .btn-yellow:hover { background-color: var(--primary-yellow-hover); }
+        .mobile-toggle { display: none; font-size: 1.5rem; color: #2c3e50; }
+
+        .page-hero { background: linear-gradient(135deg, rgba(12, 16, 22, 0.94) 0%, rgba(20, 26, 35, 0.90) 100%), url('images/hero_car.png'); background-size: cover; background-position: center; color: #ffffff; padding: 55px 0; }
+        .page-hero-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
+        .page-hero h1 { font-size: 2.3rem; font-weight: 800; text-transform: uppercase; line-height: 1.25; margin-bottom: 14px; }
+        .page-hero h1 span { color: var(--primary-yellow); }
+        .page-hero p { font-size: 1.05rem; color: #d0d7de; margin-bottom: 25px; }
+
+        .hero-form-card { background: #ffffff; border-radius: 16px; padding: 26px; color: var(--text-main); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); }
+        .form-header { text-align: center; margin-bottom: 16px; }
+        .form-header h2 { font-size: 1.35rem; font-weight: 800; color: #1a1e24; text-transform: uppercase; }
+        .form-header h2 span { color: var(--primary-yellow); }
+        .enquiry-form { display: flex; flex-direction: column; gap: 10px; }
+        .input-group { position: relative; display: flex; align-items: center; }
+        .input-group i { position: absolute; left: 12px; color: #94a3b8; font-size: 0.85rem; }
+        .input-group input, .input-group select, .input-group textarea { width: 100%; padding: 9px 12px 9px 36px; font-family: inherit; font-size: 0.82rem; border: 1px solid var(--border-color); border-radius: 8px; background-color: #f8fafc; outline: none; }
+        .input-group textarea { padding-top: 8px; height: 60px; resize: none; }
+        .btn-quote { width: 100%; background-color: var(--primary-yellow); color: #000000; font-weight: 700; font-size: 0.88rem; padding: 11px; border-radius: 8px; border: none; cursor: pointer; text-transform: uppercase; margin-top: 4px; }
+
+        .section-padding { padding: 60px 0; }
+        .section-title-wrap { text-align: center; margin-bottom: 40px; }
+        .section-subtitle { color: var(--primary-yellow); font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; display: block; }
+        .section-title { font-size: 1.95rem; font-weight: 800; color: #1a1e24; }
+
+        .grid-3 { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .info-card { background: #ffffff; border: 1px solid var(--border-color); border-radius: 12px; padding: 24px 20px; transition: var(--transition); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .info-card:hover { transform: translateY(-5px); border-color: var(--primary-yellow); box-shadow: var(--card-shadow); }
+        .info-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: #1e293b; }
+        .info-card p { font-size: 0.84rem; color: #64748b; line-height: 1.55; }
+        .info-price { font-size: 1.25rem; font-weight: 800; color: #1e293b; margin-top: 10px; }
+        .info-price span { font-size: 0.68rem; color: var(--primary-yellow); display: block; font-weight: 700; }
+
+        .footer { background-color: #0b0d0f; color: #94a3b8; font-size: 0.85rem; padding-top: 55px; }
+        .footer-container { max-width: 1240px; margin: 0 auto; padding: 0 20px 35px; display: grid; grid-template-columns: 1.3fr 0.9fr 1fr 1fr 1.1fr; gap: 28px; }
+        .footer-col h3 { color: #ffffff; font-size: 0.98rem; font-weight: 700; margin-bottom: 18px; }
+        .footer-links { display: flex; flex-direction: column; gap: 9px; }
+        .footer-bottom { background-color: #060708; border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 16px 0; font-size: 0.78rem; }
+        .footer-bottom-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+
+        .sticky-actions-wrap { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 9999; }
+        .sticky-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.6rem; color: #ffffff; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); transition: var(--transition); }
+        .sticky-btn:hover { transform: scale(1.1); }
+        .sticky-btn.whatsapp { background-color: #25d366; }
+        .sticky-btn.call { background-color: var(--primary-yellow); color: #000000; }
+
+        @media (max-width: 900px) {
+            .page-hero-container, .grid-3, .footer-container { grid-template-columns: 1fr; }
+            .mobile-toggle { display: block; }
+            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; }
+            .nav-menu.active { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
+
+    <!-- PAGE HERO & FORM -->
+    <section class="page-hero">
+        <div class="page-hero-container">
+            <div>
+                <h1>LOCAL HOURLY <span>CAB RENTALS IN BANGALORE</span></h1>
+                <p>Hire a dedicated AC cab with chauffeur for 4 Hrs, 8 Hrs, or 12 Hrs. Ideal for city shopping, business meetings, and local hospital visits.</p>
+                <a href="tel:9187710319" class="btn-yellow"><i class="fas fa-phone-alt"></i> CALL +91 9187710319</a>
+            </div>
+
+            <div class="hero-form-card" id="book">
+                <div class="form-header">
+                    <h2>BOOK <span>LOCAL CAB</span></h2>
+                    <p>Instant booking confirmation via WhatsApp</p>
+                </div>
+                <form class="enquiry-form" id="enquiryForm" onsubmit="handleFormSubmit(event)">
+                    <div class="input-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" id="userName" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-mobile-alt"></i>
+                        <input type="tel" id="userMobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="pickupLocation" placeholder="Pickup Area in Bangalore" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-clock"></i>
+                        <select id="packageType" required>
+                            <option value="" disabled selected>Select Hourly Package</option>
+                            <option value="4 Hours / 40 KM">4 Hours / 40 KM Package</option>
+                            <option value="8 Hours / 80 KM">8 Hours / 80 KM Full Day Package</option>
+                            <option value="12 Hours / 120 KM">12 Hours / 120 KM Extended Package</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="date" id="travelDate" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-car-side"></i>
+                        <select id="carType" required>
+                            <option value="" disabled selected>Select Car Type</option>
+                            <option value="Swift Dzire">Swift Dzire (4 Seats AC)</option>
+                            <option value="Toyota Etios">Toyota Etios (4 Seats AC)</option>
+                            <option value="Toyota Innova">Toyota Innova (7 Seats AC)</option>
+                            <option value="Innova Crysta">Innova Crysta (7 Seats AC)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-envelope"></i>
+                        <textarea id="userMessage" placeholder="Special Instructions / Trip Purpose"></textarea>
+                    </div>
+                    <button type="submit" class="btn-quote"><i class="fab fa-whatsapp"></i> BOOK LOCAL CAB VIA WHATSAPP</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL HOURLY PACKAGES -->
+    <section class="section-padding">
+        <div class="section-title-wrap">
+            <span class="section-subtitle">LOCAL HOURLY TARIFF</span>
+            <h2 class="section-title">Flexible City Travel Packages</h2>
+        </div>
+
+        <div class="grid-3">
+            <div class="info-card">
+                <h3><i class="fas fa-history" style="color:var(--primary-yellow);"></i> 4 Hours / 40 KM</h3>
+                <p>Perfect for quick half-day errands, railway station pick/drop, or quick doctor visits in Bangalore.</p>
+                <div class="info-price">₹1,199 <span>STARTING TARIFF</span></div>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-sun" style="color:var(--primary-yellow);"></i> 8 Hours / 80 KM</h3>
+                <p>Most popular full-day package for city shopping, multi-stop business meetings, or temple visits.</p>
+                <div class="info-price">₹1,999 <span>STARTING TARIFF</span></div>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-moon" style="color:var(--primary-yellow);"></i> 12 Hours / 120 KM</h3>
+                <p>Extended full-day rental for exploring all corners of Bangalore city without worrying about meter charges.</p>
+                <div class="info-price">₹2,699 <span>STARTING TARIFF</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+
+    <script>
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        mobileToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('userName').value.trim();
+            const mobile = document.getElementById('userMobile').value.trim();
+            const pickup = document.getElementById('pickupLocation').value.trim();
+            const pkg = document.getElementById('packageType').value;
+            const rawDate = document.getElementById('travelDate').value;
+            const carSelect = document.getElementById('carType');
+            const carText = carSelect.options[carSelect.selectedIndex].text;
+            const message = document.getElementById('userMessage').value.trim();
+
+            let formattedDate = rawDate;
+            if (rawDate) {
+                const p = rawDate.split('-');
+                if (p.length === 3) formattedDate = `${p[2]}-${p[1]}-${p[0]}`;
+            }
+
+            let text = `*New Local Cab Booking - Kanasu Cabs*%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Mobile:* ${encodeURIComponent(mobile)}%0A` +
+                `*Service:* Local Hourly Cab%0A` +
+                `*Package:* ${encodeURIComponent(pkg)}%0A` +
+                `*Pickup Area:* ${encodeURIComponent(pickup)}%0A` +
+                `*Date:* ${encodeURIComponent(formattedDate)}%0A` +
+                `*Car Selected:* ${encodeURIComponent(carText)}%0A`;
+            if (message) text += `*Notes:* ${encodeURIComponent(message)}%0A`;
+
+            window.open(`https://wa.me/919187710319?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>

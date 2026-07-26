@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Kanasu Cabs - Bangalore's most trusted Oneway & Outstation Taxi Service provider. Committed to safe, clean, and reliable cab rentals.">
+    <meta name="keywords" content="About Kanasu Cabs, Bangalore Taxi Company, Kanasu Cabs Bangalore, Reliable Taxi Bangalore">
+    <meta name="author" content="Kanasu Cabs">
+    <title>About Us - Kanasu Cabs Bangalore Taxi Service</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --primary-yellow: #FFB800; --primary-yellow-hover: #e5a600; --dark-bg: #111418; --text-main: #212529; --border-color: #e2e8f0; --card-shadow: 0 10px 30px rgba(0,0,0,0.08); --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: #ffffff; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .top-bar { background-color: #0b0d0f; color: #b0b7c0; font-size: 0.85rem; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+        .top-bar-container { max-width: 1440px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-left i, .top-bar-item i { color: var(--primary-yellow); }
+        .top-bar-right { display: flex; gap: 24px; }
+
+        .header { background-color: #ffffff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .header-container { max-width: 1440px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: radial-gradient(circle at center, #1b4332 0%, #081c15 100%); border: 2px solid #2d6a4f; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+        .logo-icon i { color: var(--primary-yellow); font-size: 1.4rem; }
+        .logo-title { font-size: 1.45rem; font-weight: 800; color: #1b4332; }
+        .logo-title span { color: var(--primary-yellow); }
+        .logo-subtitle { font-size: 0.65rem; font-weight: 600; color: #555; text-transform: uppercase; }
+
+        .nav-menu { display: flex; align-items: center; gap: 22px; }
+        .nav-link { font-size: 0.88rem; font-weight: 600; color: #2c3e50; padding: 6px 0; transition: var(--transition); white-space: nowrap; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-yellow); }
+        .btn-yellow { background-color: var(--primary-yellow); color: #000000; font-weight: 700; font-size: 0.85rem; padding: 10px 22px; border-radius: 50px; border: none; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
+        .btn-yellow:hover { background-color: var(--primary-yellow-hover); }
+        .mobile-toggle { display: none; font-size: 1.5rem; color: #2c3e50; }
+
+        .page-hero { background: linear-gradient(135deg, rgba(12, 16, 22, 0.94) 0%, rgba(20, 26, 35, 0.90) 100%), url('images/hero_car.png'); background-size: cover; background-position: center; color: #ffffff; padding: 55px 0; text-align: center; }
+        .page-hero h1 { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
+        .page-hero h1 span { color: var(--primary-yellow); }
+
+        .section-padding { padding: 60px 0; }
+        .about-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .about-text h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; color: #1e293b; }
+        .about-text p { font-size: 0.95rem; color: #475569; line-height: 1.7; margin-bottom: 20px; }
+
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+        .promise-card { background: #f8fafc; border: 1px solid var(--border-color); border-radius: 12px; padding: 24px 16px; text-align: center; }
+        .promise-card i { font-size: 2rem; color: var(--primary-yellow); margin-bottom: 14px; }
+        .promise-card h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+        .promise-card p { font-size: 0.82rem; color: #64748b; }
+
+        .footer { background-color: #0b0d0f; color: #94a3b8; font-size: 0.85rem; padding-top: 55px; }
+        .footer-container { max-width: 1240px; margin: 0 auto; padding: 0 20px 35px; display: grid; grid-template-columns: 1.3fr 0.9fr 1fr 1fr 1.1fr; gap: 28px; }
+        .footer-col h3 { color: #ffffff; font-size: 0.98rem; font-weight: 700; margin-bottom: 18px; }
+        .footer-links { display: flex; flex-direction: column; gap: 9px; }
+        .footer-bottom { background-color: #060708; border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 16px 0; font-size: 0.78rem; }
+        .footer-bottom-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+
+        .sticky-actions-wrap { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 9999; }
+        .sticky-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.6rem; color: #ffffff; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); transition: var(--transition); }
+        .sticky-btn:hover { transform: scale(1.1); }
+        .sticky-btn.whatsapp { background-color: #25d366; }
+        .sticky-btn.call { background-color: var(--primary-yellow); color: #000000; }
+
+        @media (max-width: 900px) {
+            .grid-4, .footer-container { grid-template-columns: 1fr; }
+            .mobile-toggle { display: block; }
+            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; }
+            .nav-menu.active { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-container">
+            <h1>ABOUT <span>KANASU CABS</span></h1>
+            <p>Your Trusted Travel Partner in Bangalore for Oneway Taxi, Outstation Trips & Airport Transfers.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section-padding">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Bangalore's Leading Chauffeur-Driven Taxi Service</h2>
+                <p>Founded with the mission to revolutionize intercity and local travel in South India, <strong>Kanasu Cabs</strong> provides premium, affordable, and transparent taxi services based out of Bangalore.</p>
+                <p>We specialize in <strong>Oneway Drop Taxis</strong>, eliminating the unfair practice of charging customers return trip fares when they only need to travel one-way. From pristine hatchbacks and luxury sedans to spacious 7-seater Innova Crystas and 16-seater Tempo Travellers, our fleet is equipped to handle all your travel needs comfortably.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="promise-card">
+                    <i class="fas fa-broom"></i>
+                    <h4>Sanitized Cabs</h4>
+                    <p>Clean and disinfected vehicles before every single ride.</p>
+                </div>
+                <div class="promise-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h4>Zero Hidden Charges</h4>
+                    <p>Transparent fare structure with no surprise billing.</p>
+                </div>
+                <div class="promise-card">
+                    <i class="fas fa-user-check"></i>
+                    <h4>Verified Drivers</h4>
+                    <p>Courteous, skilled drivers knowledgeable in highway routes.</p>
+                </div>
+                <div class="promise-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>On-Time Pickup</h4>
+                    <p>Zero cancellation policy with guaranteed punctual pickup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+</body>
+</html>

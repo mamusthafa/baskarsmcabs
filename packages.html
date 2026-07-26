@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kanasu Cabs Tour Packages - Best selling tour packages from Bangalore to Mysore, Coorg, Ooty & Bangalore Local Sightseeing.">
+    <meta name="keywords" content="Bangalore Tour Packages, Mysore Tour Package Bangalore, Ooty Tour Package Bangalore, Coorg Tour Package Bangalore, Kanasu Cabs Packages">
+    <meta name="author" content="Kanasu Cabs">
+    <title>Popular Tour Packages from Bangalore - Kanasu Cabs</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --primary-yellow: #FFB800; --primary-yellow-hover: #e5a600; --dark-bg: #111418; --text-main: #212529; --border-color: #e2e8f0; --card-shadow: 0 10px 30px rgba(0,0,0,0.08); --transition: all 0.3s ease; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text-main); background-color: #ffffff; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .top-bar { background-color: #0b0d0f; color: #b0b7c0; font-size: 0.85rem; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+        .top-bar-container { max-width: 1440px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-left i, .top-bar-item i { color: var(--primary-yellow); }
+        .top-bar-right { display: flex; gap: 24px; }
+
+        .header { background-color: #ffffff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .header-container { max-width: 1440px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 48px; height: 48px; background: radial-gradient(circle at center, #1b4332 0%, #081c15 100%); border: 2px solid #2d6a4f; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+        .logo-icon i { color: var(--primary-yellow); font-size: 1.4rem; }
+        .logo-title { font-size: 1.45rem; font-weight: 800; color: #1b4332; }
+        .logo-title span { color: var(--primary-yellow); }
+        .logo-subtitle { font-size: 0.65rem; font-weight: 600; color: #555; text-transform: uppercase; }
+
+        .nav-menu { display: flex; align-items: center; gap: 22px; }
+        .nav-link { font-size: 0.88rem; font-weight: 600; color: #2c3e50; padding: 6px 0; transition: var(--transition); white-space: nowrap; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-yellow); }
+        .btn-yellow { background-color: var(--primary-yellow); color: #000000; font-weight: 700; font-size: 0.85rem; padding: 10px 22px; border-radius: 50px; border: none; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
+        .btn-yellow:hover { background-color: var(--primary-yellow-hover); }
+        .mobile-toggle { display: none; font-size: 1.5rem; color: #2c3e50; }
+
+        .page-hero { background: linear-gradient(135deg, rgba(12, 16, 22, 0.94) 0%, rgba(20, 26, 35, 0.90) 100%), url('images/hero_car.png'); background-size: cover; background-position: center; color: #ffffff; padding: 55px 0; text-align: center; }
+        .page-hero h1 { font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 10px; }
+        .page-hero h1 span { color: var(--primary-yellow); }
+
+        .section-padding { padding: 60px 0; }
+        .packages-grid { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+        .package-card { background: #ffffff; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; transition: var(--transition); }
+        .package-card:hover { transform: translateY(-5px); box-shadow: var(--card-shadow); border-color: var(--primary-yellow); }
+        .package-img-wrap { position: relative; height: 230px; overflow: hidden; }
+        .package-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        .package-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; color: #ffffff; }
+        .package-overlay h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+        .package-overlay p { font-size: 0.85rem; color: #cbd5e1; }
+        .package-footer { padding: 16px 20px; background: #f8fafc; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+        .package-price-val { font-size: 1.3rem; font-weight: 800; color: #1e293b; }
+
+        .footer { background-color: #0b0d0f; color: #94a3b8; font-size: 0.85rem; padding-top: 55px; }
+        .footer-container { max-width: 1240px; margin: 0 auto; padding: 0 20px 35px; display: grid; grid-template-columns: 1.3fr 0.9fr 1fr 1fr 1.1fr; gap: 28px; }
+        .footer-col h3 { color: #ffffff; font-size: 0.98rem; font-weight: 700; margin-bottom: 18px; }
+        .footer-links { display: flex; flex-direction: column; gap: 9px; }
+        .footer-bottom { background-color: #060708; border-top: 1px solid rgba(255, 255, 255, 0.05); padding: 16px 0; font-size: 0.78rem; }
+        .footer-bottom-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+
+        .sticky-actions-wrap { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 9999; }
+        .sticky-btn { width: 54px; height: 54px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.6rem; color: #ffffff; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); transition: var(--transition); }
+        .sticky-btn:hover { transform: scale(1.1); }
+        .sticky-btn.whatsapp { background-color: #25d366; }
+        .sticky-btn.call { background-color: var(--primary-yellow); color: #000000; }
+
+        @media (max-width: 900px) {
+            .packages-grid, .footer-container { grid-template-columns: 1fr; }
+            .mobile-toggle { display: block; }
+            .nav-menu { position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; flex-direction: column; padding: 20px; gap: 15px; display: none; }
+            .nav-menu.active { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-container">
+            <h1>POPULAR <span>TOUR PACKAGES</span> FROM BANGALORE</h1>
+            <p>Customized road trip tour packages with private cab, verified driver, and flexible sightseeing itineraries.</p>
+        </div>
+    </section>
+
+    <!-- PACKAGES GRID -->
+    <section class="section-padding">
+        <div class="packages-grid">
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_bangalore.png" alt="Bangalore Local Sightseeing">
+                    <div class="package-overlay">
+                        <h3>Bangalore City Sightseeing Tour</h3>
+                        <p>Vidhana Soudha, Lalbagh Botanical Garden, Cubbon Park, ISKCON Temple & Bangalore Palace.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div><i class="far fa-clock" style="color:var(--primary-yellow);"></i> 8 Hours / 80 KM</div>
+                    <div class="package-price-val">₹1,999</div>
+                    <a href="contact-us.html" class="btn-yellow">BOOK PACKAGE</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_mysore.png" alt="Bangalore to Mysore Tour">
+                    <div class="package-overlay">
+                        <h3>Bangalore to Mysore Heritage Tour</h3>
+                        <p>Mysore Palace, Chamundi Hills, Brindavan Gardens, Philomena Church & Zoo.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div><i class="far fa-clock" style="color:var(--primary-yellow);"></i> 1 Day / 300 KM</div>
+                    <div class="package-price-val">₹4,999</div>
+                    <a href="contact-us.html" class="btn-yellow">BOOK PACKAGE</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_ooty.png" alt="Bangalore to Ooty Tour">
+                    <div class="package-overlay">
+                        <h3>Bangalore to Ooty Hill Station Tour</h3>
+                        <p>Ooty Lake, Botanical Garden, Doddabetta Peak, Tea Factory & Coonoor.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div><i class="far fa-clock" style="color:var(--primary-yellow);"></i> 2 Days / 600 KM</div>
+                    <div class="package-price-val">₹5,499</div>
+                    <a href="contact-us.html" class="btn-yellow">BOOK PACKAGE</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_coorg.png" alt="Bangalore to Coorg Tour">
+                    <div class="package-overlay">
+                        <h3>Bangalore to Coorg Coffee Land Tour</h3>
+                        <p>Abbey Falls, Raja's Seat, Dubare Elephant Camp, Golden Temple & Coffee Estates.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div><i class="far fa-clock" style="color:var(--primary-yellow);"></i> 2 Days / 600 KM</div>
+                    <div class="package-price-val">₹4,499</div>
+                    <a href="contact-us.html" class="btn-yellow">BOOK PACKAGE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+</body>
+</html>
