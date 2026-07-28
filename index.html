@@ -2,1479 +2,30 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16810471261"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16810471261');
-</script>
-
-<!-- Event snippet for Contact conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-16810471261/KpF5CPW2-9ccEN3e7c8-'});
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16810471261"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16810471261');
+    </script>
+    
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-16810471261/KpF5CPW2-9ccEN3e7c8-'});
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kanasu Cabs - Bangalore's premier taxi service for oneway taxi, outstation cabs, airport transfers, and local hourly taxi rentals. Book clean, reliable cabs at best rates!">
-    <meta name="keywords" content="Kanasu Cabs, Bangalore Taxi Service, Oneway Taxi Bangalore, Airport Cab Bangalore, Outstation Cab Bangalore, Taxi Booking Bangalore">
-    <meta name="author" content="Kanasu Cabs">
-    <title>Kanasu Cabs - Oneway Taxi & Outstation Cab Service in Bangalore</title>
+    <meta name="description" content="SM Cabs Coorg - Coorg's premier taxi service based in Madikeri. Book clean, reliable cabs for Coorg sightseeing, airport transfers, and outstation trips at best rates!">
+    <meta name="keywords" content="SM Cabs Coorg, SM Cabs, Coorg Taxi Service, Madikeri Taxi, Coorg Sightseeing Cabs, Outstation Cab Coorg, Airport Taxi Coorg">
+    <meta name="author" content="SM Cabs Coorg">
+    <title>SM Cabs Coorg - Premium Taxi & Cab Service in Coorg</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary-yellow: #FFB800;
-            --primary-yellow-hover: #e5a600;
-            --dark-bg: #111418;
-            --dark-secondary: #1a1e24;
-            --dark-card: #22272e;
-            --text-main: #212529;
-            --text-muted: #6c757d;
-            --text-light: #e9ecef;
-            --light-bg: #f8f9fa;
-            --border-color: #e2e8f0;
-            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-main);
-            background-color: #ffffff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* --- TOP BAR --- */
-        .top-bar {
-            background-color: #0b0d0f;
-            color: #b0b7c0;
-            font-size: 0.85rem;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .top-bar-container {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 0 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top-bar-left {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .top-bar-left i {
-            color: var(--primary-yellow);
-        }
-
-        .top-bar-right {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-
-        .top-bar-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-        }
-
-        .top-bar-item:hover {
-            color: #ffffff;
-        }
-
-        .top-bar-item i {
-            color: var(--primary-yellow);
-        }
-
-        /* --- MAIN HEADER --- */
-        .header {
-            background-color: #ffffff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        }
-
-        .header-container {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 12px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            width: 48px;
-            height: 48px;
-            background: radial-gradient(circle at center, #1b4332 0%, #081c15 100%);
-            border: 2px solid #2d6a4f;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
-
-        .logo-icon i {
-            color: var(--primary-yellow);
-            font-size: 1.4rem;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-title {
-            font-size: 1.45rem;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -0.5px;
-            color: #1b4332;
-        }
-
-        .logo-title span {
-            color: var(--primary-yellow);
-        }
-
-        .logo-subtitle {
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: #555;
-            text-transform: uppercase;
-            margin-top: 2px;
-        }
-
-        .nav-menu {
-            display: flex;
-            align-items: center;
-            gap: 22px;
-        }
-
-        .nav-link {
-            font-size: 0.88rem;
-            font-weight: 600;
-            color: #2c3e50;
-            position: relative;
-            padding: 6px 0;
-            transition: var(--transition);
-            white-space: nowrap;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary-yellow);
-        }
-
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: var(--primary-yellow);
-            border-radius: 2px;
-        }
-
-        .btn-yellow {
-            background-color: var(--primary-yellow);
-            color: #000000;
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-            padding: 10px 22px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(255, 184, 0, 0.35);
-            transition: var(--transition);
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .btn-yellow:hover {
-            background-color: var(--primary-yellow-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 184, 0, 0.45);
-        }
-
-        .mobile-toggle {
-            display: none;
-            font-size: 1.5rem;
-            color: #2c3e50;
-            cursor: pointer;
-        }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            background: linear-gradient(135deg, rgba(12, 16, 22, 0.94) 0%, rgba(20, 26, 35, 0.90) 100%), url('images/hero_car.png');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            padding: 55px 0 75px;
-            color: #ffffff;
-        }
-
-        .hero-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .hero-headline h1 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            line-height: 1.25;
-            margin-bottom: 14px;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-        }
-
-        .hero-headline h1 .highlight {
-            color: var(--primary-yellow);
-        }
-
-        .hero-subtitle {
-            font-size: 1.05rem;
-            color: #d0d7de;
-            margin-bottom: 25px;
-            font-weight: 400;
-        }
-
-        .hero-car-preview {
-            width: 95%;
-            margin-bottom: 30px;
-            
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .hero-car-preview img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 12px;
-        }
-
-        /* 4 Feature Badges */
-        .hero-features {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .feature-badge {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 8px;
-        }
-
-        .feature-badge-icon {
-            width: 44px;
-            height: 44px;
-            background-color: var(--primary-yellow);
-            color: #000000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 10px rgba(255, 184, 0, 0.3);
-        }
-
-        .feature-badge span {
-            font-size: 0.75rem;
-            font-weight: 600;
-            line-height: 1.25;
-            color: #ffffff;
-        }
-
-        /* Hero Form Card */
-        .hero-form-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 26px;
-            color: var(--text-main);
-           
-        }
-
-        .form-tabs {
-            display: flex;
-            background-color: #f1f5f9;
-            padding: 4px;
-            border-radius: 8px;
-            margin-bottom: 18px;
-            gap: 4px;
-        }
-
-        .form-tab {
-            flex: 1;
-            padding: 8px 4px;
-            font-size: 0.74rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 6px;
-            background: transparent;
-            color: #64748b;
-            cursor: pointer;
-            transition: var(--transition);
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .form-tab.active {
-            background: var(--primary-yellow);
-            color: #000000;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        .form-header {
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        .form-header h2 {
-            font-size: 1.35rem;
-            font-weight: 800;
-            color: #1a1e24;
-            text-transform: uppercase;
-        }
-
-        .form-header h2 span {
-            color: var(--primary-yellow);
-        }
-
-        .form-header p {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-top: 2px;
-        }
-
-        .enquiry-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .input-group {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .input-group i {
-            position: absolute;
-            left: 12px;
-            color: #94a3b8;
-            font-size: 0.85rem;
-            pointer-events: none;
-        }
-
-        .input-group input,
-        .input-group select,
-        .input-group textarea {
-            width: 100%;
-            padding: 9px 12px 9px 36px;
-            font-family: inherit;
-            font-size: 0.82rem;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            background-color: #f8fafc;
-            color: #1e293b;
-            transition: var(--transition);
-            outline: none;
-        }
-
-        .input-group textarea {
-            padding-top: 8px;
-            height: 60px;
-            resize: none;
-        }
-
-        .input-group input:focus,
-        .input-group select:focus,
-        .input-group textarea:focus {
-            border-color: var(--primary-yellow);
-            background-color: #ffffff;
-            box-shadow: 0 0 0 3px rgba(255, 184, 0, 0.2);
-        }
-
-        .btn-quote {
-            width: 100%;
-            background-color: var(--primary-yellow);
-            color: #000000;
-            font-weight: 700;
-            font-size: 0.88rem;
-            padding: 11px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(255, 184, 0, 0.35);
-            transition: var(--transition);
-            margin-top: 4px;
-        }
-
-        .btn-quote:hover {
-            background-color: var(--primary-yellow-hover);
-            box-shadow: 0 6px 20px rgba(255, 184, 0, 0.5);
-        }
-
-        /* --- SECTION COMMONS --- */
-        .section-padding {
-            padding: 65px 0;
-        }
-
-        .section-title-wrap {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section-subtitle {
-            color: var(--primary-yellow);
-            font-size: 0.82rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-            display: block;
-        }
-
-        .section-title {
-            font-size: 1.95rem;
-            font-weight: 800;
-            color: #1a1e24;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 12px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 3px;
-            background-color: var(--primary-yellow);
-            border-radius: 2px;
-        }
-
-        /* --- SERVICES SECTION --- */
-        .services-section {
-            background-color: #ffffff;
-        }
-
-        .services-grid {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .service-card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 28px 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-            position: relative;
-        }
-
-        .service-card.highlighted {
-            border: 2px solid var(--primary-yellow);
-            box-shadow: 0 8px 25px rgba(255, 184, 0, 0.2);
-        }
-
-        .service-badge {
-            position: absolute;
-            top: -12px;
-            background-color: var(--primary-yellow);
-            color: #000000;
-            font-size: 0.68rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            padding: 3px 12px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow);
-        }
-
-        .service-icon-wrap {
-            width: 58px;
-            height: 58px;
-            background-color: var(--primary-yellow);
-            color: #000000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            margin-bottom: 18px;
-            box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
-        }
-
-        .service-card h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #1e293b;
-        }
-
-        .service-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            line-height: 1.55;
-            margin-bottom: 18px;
-            flex-grow: 1;
-        }
-
-        .service-link {
-            font-size: 0.78rem;
-            font-weight: 700;
-            color: #1e293b;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-link {
-            color: var(--primary-yellow);
-        }
-
-        /* --- FLEET SECTION --- */
-        .fleet-section {
-            background-color: #f8fafc;
-        }
-
-        .fleet-grid {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-bottom: 35px;
-        }
-
-        .fleet-card {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-            text-align: center;
-            transition: var(--transition);
-        }
-
-        .fleet-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow);
-            border-color: var(--primary-yellow);
-        }
-
-        .fleet-img-wrap {
-            height: 220px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 14px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .fleet-img-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .fleet-card:hover .fleet-img-wrap img {
-            transform: scale(1.05);
-        }
-
-        .fleet-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 8px;
-        }
-
-        .fleet-specs {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            font-size: 0.8rem;
-            color: #64748b;
-            font-weight: 600;
-            margin-bottom: 14px;
-        }
-
-        .fleet-specs span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: #f1f5f9;
-            padding: 4px 10px;
-            border-radius: 6px;
-        }
-
-        .fleet-specs i {
-            color: var(--primary-yellow);
-        }
-
-        .btn-fleet-enquire {
-            width: 100%;
-            padding: 10px 16px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            border-radius: 8px;
-        }
-
-        /* --- PACKAGES SECTION --- */
-        .packages-section {
-            background-color: #ffffff;
-        }
-
-        .packages-grid {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 22px;
-            margin-bottom: 35px;
-        }
-
-        .package-card {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--card-shadow);
-        }
-
-        .package-img-wrap {
-            position: relative;
-            height: 175px;
-            overflow: hidden;
-        }
-
-        .package-img-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .package-card:hover .package-img-wrap img {
-            transform: scale(1.08);
-        }
-
-        .package-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 14px;
-            color: #ffffff;
-        }
-
-        .package-overlay h3 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 4px;
-        }
-
-        .package-overlay p {
-            font-size: 0.75rem;
-            color: #cbd5e1;
-            line-height: 1.35;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .package-footer {
-            padding: 12px 14px;
-            background: #f8fafc;
-            border-top: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .package-duration {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #475569;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .package-duration i {
-            color: var(--primary-yellow);
-        }
-
-        .package-price {
-            text-align: right;
-        }
-
-        .package-price-val {
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: #1e293b;
-            line-height: 1;
-        }
-
-        .package-price-label {
-            font-size: 0.6rem;
-            color: var(--primary-yellow);
-            font-weight: 700;
-            text-transform: uppercase;
-            display: block;
-        }
-
-        /* --- WHY CHOOSE US SECTION --- */
-        .why-us-section {
-            background: linear-gradient(135deg, rgba(15, 20, 25, 0.95) 0%, rgba(25, 32, 42, 0.92) 100%), url('images/hero_car.png');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            padding: 65px 0;
-        }
-
-        .why-us-section .section-title {
-            color: #ffffff;
-        }
-
-        .why-us-grid {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .why-us-card {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            padding: 24px 16px;
-            transition: var(--transition);
-        }
-
-        .why-us-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-4px);
-        }
-
-        .why-us-icon-wrap {
-            width: 54px;
-            height: 54px;
-            background-color: var(--primary-yellow);
-            color: #000000;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            margin-bottom: 16px;
-            box-shadow: 0 4px 15px rgba(255, 184, 0, 0.35);
-        }
-
-        .why-us-card h3 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #ffffff;
-        }
-
-        .why-us-card p {
-            font-size: 0.8rem;
-            color: #94a3b8;
-            line-height: 1.45;
-        }
-
-        /* --- ABOUT & INFO SECTION --- */
-        .info-section {
-            background-color: #f8fafc;
-        }
-
-        .info-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .info-content h3 {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #1e293b;
-            margin-bottom: 14px;
-        }
-
-        .info-content p {
-            font-size: 0.88rem;
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-
-        .info-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .info-list-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 0.85rem;
-            color: #334155;
-            font-weight: 500;
-        }
-
-        .info-list-item i {
-            color: var(--primary-yellow);
-            margin-top: 3px;
-        }
-
-        /* --- FAQ SECTION --- */
-        .faq-section {
-            background-color: #ffffff;
-        }
-
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .faq-item {
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            margin-bottom: 12px;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .faq-question {
-            padding: 16px 20px;
-            background-color: #f8fafc;
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: #1e293b;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-question i {
-            color: var(--primary-yellow);
-            transition: transform 0.3s;
-        }
-
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            font-size: 0.85rem;
-            color: #475569;
-            line-height: 1.6;
-            background-color: #ffffff;
-        }
-
-        .faq-item.active .faq-answer {
-            padding: 16px 20px;
-            max-height: 200px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        /* --- TESTIMONIALS SECTION --- */
-        .testimonials-section {
-            background-color: #f8fafc;
-        }
-
-        .testimonials-grid {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-bottom: 25px;
-        }
-
-        .testimonial-card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 26px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .quote-icon {
-            font-size: 2.2rem;
-            color: var(--primary-yellow);
-            line-height: 1;
-            margin-bottom: 8px;
-            font-family: Georgia, serif;
-            font-weight: bold;
-        }
-
-        .testimonial-text {
-            font-size: 0.85rem;
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 18px;
-            flex-grow: 1;
-        }
-
-        .rating {
-            color: var(--primary-yellow);
-            font-size: 0.82rem;
-            margin-bottom: 10px;
-            display: flex;
-            gap: 3px;
-        }
-
-        .client-info h4 {
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: #1e293b;
-        }
-
-        .client-info span {
-            font-size: 0.72rem;
-            color: #94a3b8;
-        }
-
-        /* --- CALL TO ACTION BANNER --- */
-        .cta-banner {
-            background: linear-gradient(135deg, #111418 0%, #1a1e24 100%);
-            color: #ffffff;
-            padding: 50px 0;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .cta-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .cta-content h2 {
-            font-size: 2.1rem;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .cta-content p {
-            font-size: 1rem;
-            color: #cbd5e1;
-            margin-bottom: 22px;
-        }
-
-        .cta-image-wrap {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .badge-circle {
-            width: 105px;
-            height: 105px;
-            border: 2px dashed var(--primary-yellow);
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 10px;
-            animation: rotateBadge 20s linear infinite;
-        }
-
-        @keyframes rotateBadge {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        .badge-circle span {
-            font-size: 0.62rem;
-            font-weight: 800;
-            color: var(--primary-yellow);
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
-
-        .cta-car-img {
-            max-width: 90%;
-            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
-        }
-
-        /* --- FOOTER --- */
-        .footer {
-            background-color: #0b0d0f;
-            color: #94a3b8;
-            font-size: 0.85rem;
-            padding-top: 55px;
-        }
-
-        .footer-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px 35px;
-            display: grid;
-            grid-template-columns: 1.3fr 0.9fr 1fr 1fr 1.1fr;
-            gap: 28px;
-        }
-
-        .footer-col h3 {
-            color: #ffffff;
-            font-size: 0.98rem;
-            font-weight: 700;
-            margin-bottom: 18px;
-        }
-
-        .footer-col p {
-            line-height: 1.55;
-            margin-bottom: 18px;
-        }
-
-        .footer-socials {
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-icon {
-            width: 34px;
-            height: 34px;
-            background: rgba(255, 255, 255, 0.08);
-            color: #ffffff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-
-        .social-icon:hover {
-            background-color: var(--primary-yellow);
-            color: #000000;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-direction: column;
-            gap: 9px;
-        }
-
-        .footer-links a {
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--primary-yellow);
-            padding-left: 4px;
-        }
-
-        .footer-contact-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .footer-contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-        }
-
-        .footer-contact-item i {
-            color: var(--primary-yellow);
-            margin-top: 3px;
-        }
-
-        .footer-bottom {
-            background-color: #060708;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 16px 0;
-            font-size: 0.78rem;
-        }
-
-        .footer-bottom-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* --- STICKY DUAL FLOATING ACTION BUTTONS (Call & WhatsApp) --- */
-        .sticky-actions-wrap {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 9999;
-        }
-
-        .sticky-btn {
-            width: 54px;
-            height: 54px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.6rem;
-            color: #ffffff;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .sticky-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .sticky-btn.whatsapp {
-            background-color: #25d366;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-        }
-
-        .sticky-btn.call {
-            background-color: var(--primary-yellow);
-            color: #000000;
-            box-shadow: 0 6px 20px rgba(255, 184, 0, 0.45);
-        }
-
-        /* --- RESPONSIVE MEDIA QUERIES --- */
-        @media (max-width: 1100px) {
-            .services-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .fleet-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .packages-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .why-us-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .footer-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .info-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-                padding: 0 15px;
-            }
-            .mobile-toggle {
-                display: block;
-            }
-            .nav-menu {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: #ffffff;
-                flex-direction: column;
-                padding: 20px;
-                gap: 15px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-                display: none;
-            }
-            .nav-menu.active {
-                display: flex;
-            }
-            .cta-container {
-                flex-direction: column;
-                text-align: center;
-                gap: 25px;
-                padding: 0 15px;
-            }
-            .cta-image-wrap {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 650px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 25px;
-                padding: 0 10px;
-                width: 100%;
-                max-width: 100%;
-                box-sizing: border-box;
-            }
-            .hero-form-card {
-                width: 100%;
-                max-width: 100%;
-                padding: 16px 12px;
-                box-sizing: border-box;
-                border-radius: 12px;
-            }
-            .form-tabs {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 6px;
-                padding: 5px;
-                background-color: #f1f5f9;
-                border-radius: 8px;
-            }
-            .form-tab {
-                padding: 8px 4px;
-                font-size: 0.7rem;
-                white-space: normal;
-                word-break: break-word;
-                text-align: center;
-                line-height: 1.25;
-            }
-            .top-bar-container {
-                flex-direction: column;
-                gap: 6px;
-                text-align: center;
-                padding: 4px 10px;
-            }
-            .top-bar-left, .top-bar-right {
-                justify-content: center;
-                font-size: 0.72rem;
-            }
-            .header-container {
-                padding: 8px 12px;
-                gap: 8px;
-            }
-            .logo {
-                gap: 8px;
-            }
-            .logo-icon {
-                width: 36px;
-                height: 36px;
-            }
-            .logo-icon i {
-                font-size: 1.1rem;
-            }
-            .logo-title {
-                font-size: 1.1rem;
-            }
-            .logo-subtitle {
-                font-size: 0.52rem;
-                letter-spacing: 0.5px;
-            }
-            .header .btn-yellow {
-                padding: 6px 12px;
-                font-size: 0.72rem;
-                white-space: nowrap;
-            }
-            .hero-headline h1 {
-                font-size: 1.55rem;
-                word-break: break-word;
-                overflow-wrap: break-word;
-            }
-            .hero-car-preview {
-                width: 100%;
-                max-width: 100%;
-                margin-bottom: 20px;
-                overflow: hidden;
-                box-sizing: border-box;
-            }
-            .hero-car-preview img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                object-fit: contain;
-            }
-            .hero-features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .services-grid, .why-us-grid, .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-            .fleet-section {
-                padding: 45px 0;
-            }
-            .fleet-grid {
-                grid-template-columns: 1fr;
-                padding: 0 10px;
-                gap: 16px;
-            }
-            .fleet-card {
-                padding: 14px;
-                border-radius: 14px;
-            }
-            .fleet-img-wrap {
-                height: 220px;
-                border-radius: 10px;
-            }
-            .fleet-img-wrap img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .cta-car-img {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-            }
-            .badge-circle {
-                width: 90px;
-                height: 90px;
-                font-size: 0.58rem;
-            }
-            .packages-grid {
-                grid-template-columns: 1fr;
-            }
-            .footer-container {
-                grid-template-columns: 1fr;
-            }
-            .footer-bottom-container {
-                flex-direction: column;
-                gap: 8px;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header .btn-yellow {
-                display: none;
-            }
-        }
-    </style>
+    <!-- Main Premium Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -1486,12 +37,12 @@
         <div class="hero-container" style="padding:25px;">
             <div class="hero-content">
                 <div class="hero-headline">
-                    <h1>BANGALORE'S LEADING <span class="highlight">ONEWAY TAXI</span> & OUTSTATION CAB SERVICE!</h1>
+                    <h1>COORG'S PREMIER <span class="highlight">TAXI SERVICE</span> & TOUR PACKAGES!</h1>
                 </div>
-                <p class="hero-subtitle">Affordable Oneway Drop Taxi, Outstation Roundtrips, Airport Transfers & Local Hourly Cabs at Best Rates!</p>
+                <p class="hero-subtitle">Affordable local sightseeing, airport transfers, outstation roundtrips & oneway drop cabs at best rates!</p>
 
                 <div class="hero-car-preview">
-                    <img src="images/kanasucabs.jpg" style="width: 95%; height: auto;" alt="Kanasu Cabs Toyota Innova Taxi">
+                    <img src="images/smcabscoorgg.jpg" alt="SM Cabs Coorg Toyota Innova Taxi">
                 </div>
 
                 <div class="hero-features">
@@ -1499,7 +50,7 @@
                         <div class="feature-badge-icon">
                             <i class="fas fa-route"></i>
                         </div>
-                        <span>Pay 1-Way Drop Fare</span>
+                        <span>Custom Packages</span>
                     </div>
                     <div class="feature-badge">
                         <div class="feature-badge-icon">
@@ -1525,10 +76,10 @@
             <!-- Hero Booking / Enquiry Form -->
             <div class="hero-form-card" id="book">
                 <div class="form-tabs">
-                    <button class="form-tab active" onclick="selectTab(this, 'oneway')">Oneway Taxi</button>
-                    <button class="form-tab" onclick="selectTab(this, 'outstation')">Outstation</button>
+                    <button class="form-tab active" onclick="selectTab(this, 'sightseeing')">Sightseeing</button>
                     <button class="form-tab" onclick="selectTab(this, 'airport')">Airport Taxi</button>
-                    <button class="form-tab" onclick="selectTab(this, 'local')">Local Cabs</button>
+                    <button class="form-tab" onclick="selectTab(this, 'outstation')">Outstation</button>
+                    <button class="form-tab" onclick="selectTab(this, 'oneway')">Oneway Drop</button>
                 </div>
 
                 <div class="form-header">
@@ -1547,11 +98,11 @@
                     </div>
                     <div class="input-group">
                         <i class="fas fa-map-marker-alt"></i>
-                        <input type="text" id="pickupLocation" placeholder="Pickup Location (Bangalore)" required>
+                        <input type="text" id="pickupLocation" placeholder="Pickup Location (e.g. Madikeri / Coorg)" required>
                     </div>
                     <div class="input-group">
                         <i class="fas fa-location-arrow"></i>
-                        <input type="text" id="dropLocation" placeholder="Drop Location / Destination" required>
+                        <input type="text" id="dropLocation" placeholder="Destination / Sightseeing Points" required>
                     </div>
                     <div class="input-group">
                         <i class="far fa-calendar-alt"></i>
@@ -1581,23 +132,32 @@
         </div>
     </section>
 
-    <!-- TAXI SERVICES IN BANGALORE (Oneway Taxi Highlighted #1) -->
+    <!-- TAXI SERVICES IN COORG -->
     <section class="services-section section-padding" id="services">
         <div class="section-title-wrap">
             <span class="section-subtitle">OUR TAXI SERVICES</span>
-            <h2 class="section-title">Bangalore Taxi Services</h2>
+            <h2 class="section-title">Coorg Taxi Services</h2>
         </div>
 
         <div class="services-grid">
-            <!-- HIGHLIGHTED ONEWAY TAXI SERVICE -->
+            <!-- HIGHLIGHTED SIGHTSEEING SERVICE -->
             <div class="service-card highlighted">
                 <span class="service-badge">POPULAR #1</span>
                 <div class="service-icon-wrap">
-                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-camera-retro"></i>
                 </div>
-                <h3>Oneway Taxi Service</h3>
-                <p>Pay only for one-way drop fare from Bangalore to Mysore, Coorg, Ooty, Chennai, Hyderabad, Coimbatore & over 50+ outstation cities. No return charge!</p>
-                <a href="oneway-taxi.html" class="service-link">VIEW ONEWAY TAXI <i class="fas fa-arrow-right"></i></a>
+                <h3>Local Sightseeing Tours</h3>
+                <p>Explore gorgeous Coorg spots like Abbey Falls, Talakaveri, Dubare Elephant Camp, Raja's Seat, and Golden Temple with local expert guides.</p>
+                <a href="local-cabs.html" class="btn-yellow">VIEW LOCAL CABS <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fas fa-plane-departure"></i>
+                </div>
+                <h3>Airport Transfers</h3>
+                <p>Punctual pickup and drops between Coorg and nearby airports: Mangalore Airport (IXE), Mysore Airport (MYQ), and Bangalore Airport (BLR).</p>
+                <a href="airport-taxi.html" class="btn-yellow">VIEW AIRPORT TAXI <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="service-card">
@@ -1605,26 +165,17 @@
                     <i class="fas fa-route"></i>
                 </div>
                 <h3>Outstation Cab Service</h3>
-                <p>Comfortable outstation roundtrips and weekend travel packages across Karnataka, Tamil Nadu, Kerala, and Andhra Pradesh at lowest per-km rates.</p>
-                <a href="outstation-cabs.html" class="service-link">VIEW OUTSTATION CABS <i class="fas fa-arrow-right"></i></a>
+                <p>Comfortable outstation roundtrips and tour packages across Karnataka, Kerala, and Tamil Nadu at the lowest per-km rates.</p>
+                <a href="outstation-cabs.html" class="btn-yellow">VIEW OUTSTATION CABS <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="service-card">
                 <div class="service-icon-wrap">
-                    <i class="fas fa-plane-departure"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
-                <h3>Airport Taxi Transfers</h3>
-                <p>Punctual Kempegowda International Airport (BLR) pickup & drop taxi service. Fixed flat rates with 24/7 availability and zero delay charges.</p>
-                <a href="airport-taxi.html" class="service-link">VIEW AIRPORT TAXI <i class="fas fa-arrow-right"></i></a>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon-wrap">
-                    <i class="fas fa-city"></i>
-                </div>
-                <h3>Local Taxi Rentals</h3>
-                <p>Flexible hourly taxi packages (4 Hrs/40 KM, 8 Hrs/80 KM, 12 Hrs/120 KM) for city errands, shopping trips, business meetings, and sightseeing.</p>
-                <a href="local-cabs.html" class="service-link">VIEW LOCAL CABS <i class="fas fa-arrow-right"></i></a>
+                <h3>Oneway Drop Taxi</h3>
+                <p>Need a single-way drop? Pay only for one-way distance to Bangalore, Mysore, Mangalore, Hassan, Ooty & other major hubs.</p>
+                <a href="oneway-taxi.html" class="btn-yellow">VIEW ONEWAY TAXI <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="service-card">
@@ -1632,8 +183,8 @@
                     <i class="fas fa-briefcase"></i>
                 </div>
                 <h3>Corporate Cab Rental</h3>
-                <p>Professional executive travel solutions, corporate event transport, and dedicated fleet cab services for companies in Bangalore.</p>
-                <a href="contact-us.html" class="service-link">KNOW MORE <i class="fas fa-arrow-right"></i></a>
+                <p>Professional executive travel solutions for events, hotel bookings, homestays, and business visits around Coorg.</p>
+                <a href="contact-us.html" class="btn-yellow">KNOW MORE <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="service-card">
@@ -1641,8 +192,8 @@
                     <i class="fas fa-headset"></i>
                 </div>
                 <h3>24/7 Booking Support</h3>
-                <p>Round-the-clock customer support helpline for instant taxi booking assistance, itinerary changes, and driver coordinates.</p>
-                <a href="contact-us.html" class="service-link">CONTACT US <i class="fas fa-arrow-right"></i></a>
+                <p>Round-the-clock customer support helpline for instant taxi booking assistance, itinerary changes, and driver details.</p>
+                <a href="contact-us.html" class="btn-yellow">CONTACT US <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -1664,7 +215,7 @@
                     <span><i class="fas fa-user"></i> 4 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Swift%20Dzire." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Swift%20Dzire." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
 
             <div class="fleet-card">
@@ -1676,7 +227,7 @@
                     <span><i class="fas fa-user"></i> 4 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Toyota%20Etios." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Toyota%20Etios." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
 
             <div class="fleet-card">
@@ -1688,7 +239,7 @@
                     <span><i class="fas fa-user"></i> 7 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Toyota%20Innova." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Toyota%20Innova." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
 
             <div class="fleet-card">
@@ -1700,7 +251,7 @@
                     <span><i class="fas fa-user"></i> 7 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20Innova%20Crysta." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20Innova%20Crysta." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
 
             <div class="fleet-card">
@@ -1712,7 +263,7 @@
                     <span><i class="fas fa-user"></i> 7 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20Innova%20Hycross." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20Innova%20Hycross." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
 
             <div class="fleet-card">
@@ -1721,15 +272,15 @@
                 </div>
                 <h3>Tempo Traveller</h3>
                 <div class="fleet-specs">
-                    <span><i class="fas fa-user"></i> 12 Seats</span>
+                    <span><i class="fas fa-user"></i> 12-16 Seats</span>
                     <span><i class="fas fa-snowflake"></i> AC</span>
                 </div>
-                <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Tempo%20Traveller." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
+                <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20booking%20a%20Tempo%20Traveller." target="_blank" class="btn-yellow btn-fleet-enquire"><i class="fab fa-whatsapp"></i> ENQUIRE NOW</a>
             </div>
         </div>
 
         <div class="text-center">
-            <a href="https://wa.me/919187710319?text=Hi%20Kanasu%20Cabs,%20I%20would%20like%20to%20enquire%20about%20your%20taxi%20fleet." target="_blank" class="btn-yellow"><i class="fab fa-whatsapp"></i> ENQUIRE FLEET VIA WHATSAPP</a>
+            <a href="https://wa.me/916361659021?text=Hi%20SM%20Cabs%20Coorg,%20I%20would%20like%20to%20enquire%20about%20your%20taxi%20fleet." target="_blank" class="btn-yellow"><i class="fab fa-whatsapp"></i> ENQUIRE FLEET VIA WHATSAPP</a>
         </div>
     </section>
 
@@ -1737,21 +288,21 @@
     <section class="packages-section section-padding" id="packages">
         <div class="section-title-wrap">
             <span class="section-subtitle">POPULAR PACKAGES</span>
-            <h2 class="section-title">Popular Outstation Road Trips</h2>
+            <h2 class="section-title">Popular Coorg Sightseeing & Road Trips</h2>
         </div>
 
         <div class="packages-grid">
             <div class="package-card">
                 <div class="package-img-wrap">
-                    <img src="images/pkg_bangalore.png" alt="Bangalore City Sightseeing Taxi">
+                    <img src="images/pkg_bangalore.png" alt="Coorg Local Sightseeing Taxi">
                     <div class="package-overlay">
-                        <h3>Bangalore City Tour</h3>
-                        <p>Vidhana Soudha, Lalbagh Botanical Garden, Cubbon Park, ISKCON Temple & Bangalore Palace.</p>
+                        <h3>Coorg Local Tour</h3>
+                        <p>Abbey Falls, Raja's Seat, Madikeri Fort, Dubare Elephant Camp & Bylakuppe Golden Temple.</p>
                     </div>
                 </div>
                 <div class="package-footer">
                     <div class="package-duration">
-                        <i class="far fa-clock"></i> 8 Hours / 80 KM
+                        <i class="far fa-clock"></i> 1 Day / 100 KM
                     </div>
                     <div class="package-price">
                         <div class="package-price-val">₹1999</div>
@@ -1762,56 +313,56 @@
 
             <div class="package-card">
                 <div class="package-img-wrap">
-                    <img src="images/pkg_mysore.png" alt="Bangalore to Mysore Taxi">
+                    <img src="images/pkg_mysore.png" alt="Coorg to Mysore Taxi">
                     <div class="package-overlay">
-                        <h3>Bangalore to Mysore</h3>
-                        <p>140 KM | ~3.5 Hrs ride. Explore Mysore Palace, Chamundi Hills, Brindavan Gardens & Zoo.</p>
+                        <h3>Coorg to Mysore</h3>
+                        <p>120 KM | ~3 Hrs ride. Explore Mysore Palace, Chamundi Hills, Zoo, and historic landmarks.</p>
                     </div>
                 </div>
                 <div class="package-footer">
                     <div class="package-duration">
-                        <i class="far fa-clock"></i> 1 Day / 300 KM
+                        <i class="far fa-clock"></i> 1 Day / 250 KM
+                    </div>
+                    <div class="package-price">
+                        <div class="package-price-val">₹3499</div>
+                        <span class="package-price-label">STARTING FROM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_ooty.png" alt="Coorg to Ooty Taxi">
+                    <div class="package-overlay">
+                        <h3>Coorg to Ooty</h3>
+                        <p>240 KM | ~6 Hrs ride. Scenic hill station, tea plantations, Ooty Lake & botanical gardens.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div class="package-duration">
+                        <i class="far fa-clock"></i> 2 Days / 500 KM
+                    </div>
+                    <div class="package-price">
+                        <div class="package-price-val">₹5999</div>
+                        <span class="package-price-label">STARTING FROM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-img-wrap">
+                    <img src="images/pkg_coorg.png" alt="Coorg to Bangalore Taxi">
+                    <div class="package-overlay">
+                        <h3>Coorg to Bangalore</h3>
+                        <p>240 KM | ~5.5 Hrs ride. Comfortable transfer between Bangalore City/Airport and Coorg.</p>
+                    </div>
+                </div>
+                <div class="package-footer">
+                    <div class="package-duration">
+                        <i class="far fa-clock"></i> 2 Days / 500 KM
                     </div>
                     <div class="package-price">
                         <div class="package-price-val">₹4999</div>
-                        <span class="package-price-label">STARTING FROM</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="package-card">
-                <div class="package-img-wrap">
-                    <img src="images/pkg_ooty.png" alt="Bangalore to Ooty Taxi">
-                    <div class="package-overlay">
-                        <h3>Bangalore to Ooty</h3>
-                        <p>270 KM | ~6 Hrs ride. Scenic hill station, tea plantations, Ooty Lake & Doddabetta Peak.</p>
-                    </div>
-                </div>
-                <div class="package-footer">
-                    <div class="package-duration">
-                        <i class="far fa-clock"></i> 2 Days / 600 KM
-                    </div>
-                    <div class="package-price">
-                        <div class="package-price-val">₹5499</div>
-                        <span class="package-price-label">STARTING FROM</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="package-card">
-                <div class="package-img-wrap">
-                    <img src="images/pkg_coorg.png" alt="Bangalore to Coorg Taxi">
-                    <div class="package-overlay">
-                        <h3>Bangalore to Coorg</h3>
-                        <p>240 KM | ~5.5 Hrs ride. Coffee estates, Abbey Falls, Raja's Seat & Dubare Elephant Camp.</p>
-                    </div>
-                </div>
-                <div class="package-footer">
-                    <div class="package-duration">
-                        <i class="far fa-clock"></i> 2 Days / 600 KM
-                    </div>
-                    <div class="package-price">
-                        <div class="package-price-val">₹4499</div>
                         <span class="package-price-label">STARTING FROM</span>
                     </div>
                 </div>
@@ -1865,18 +416,18 @@
         </div>
     </section>
 
-    <!-- ABOUT KANASU CABS & BANGALORE TAXI GUIDE -->
+    <!-- ABOUT SM CABS COORG & COORG TAXI GUIDE -->
     <section class="info-section section-padding">
         <div class="info-container">
             <div class="info-content">
-                <h3>Why Hire a Taxi in Bangalore with Kanasu Cabs?</h3>
-                <p>Bangalore, the Silicon Valley of India, is a bustling metropolis known for its IT parks, historic landmarks, vibrant night life, and pleasant climate. Navigating through the city's traffic or traveling to nearby holiday destinations demands a comfortable and dependable chauffeur-driven cab service.</p>
-                <p>At <strong>Kanasu Cabs</strong>, we specialize in <strong>Oneway Taxi Services</strong> and outstation cab rentals with doorstep pickup and verified polite drivers. Whether you need an urgent airport drop to Kempegowda International Airport (BLR), a full-day city rental for shopping, or a one-way trip to Mysore, Coorg, or Ooty, we have fixed low fares for you.</p>
+                <h3>Why Hire a Taxi in Coorg with SM Cabs Coorg?</h3>
+                <p>Coorg, also known as the "Scotland of India", is a gorgeous hill station in Karnataka renowned for its coffee plantations, mist-covered hills, spice gardens, and cascading waterfalls. Navigating through the winding mountain roads or traveling from airports demands an experienced driver and a reliable chauffeur-driven cab.</p>
+                <p>At <strong>SM Cabs Coorg</strong>, based out of Madikeri, we specialize in local tour packages, airport drops, and outstation roundtrips. Whether you need a transfer to Mangalore or Bangalore Airport, or a full day of sightseeing around Madikeri, Talakaveri, and Kushalnagar, we provide well-maintained cars at competitive pricing.</p>
 
                 <div class="info-list">
                     <div class="info-list-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>Oneway Drop Taxi: Pay only 1-way fare, no return charge!</span>
+                        <span>Doorstep pickup anywhere in Madikeri & Coorg.</span>
                     </div>
                     <div class="info-list-item">
                         <i class="fas fa-check-circle"></i>
@@ -1884,34 +435,34 @@
                     </div>
                     <div class="info-list-item">
                         <i class="fas fa-check-circle"></i>
-                        <span>Hassle-free 24/7 helpline and instant WhatsApp confirmation.</span>
+                        <span>Hassle-free booking confirmation directly over WhatsApp.</span>
                     </div>
                 </div>
             </div>
 
-            <div class="info-content" style="background: #ffffff; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
-                <h3>Taxi Fare & Booking Options in Bangalore</h3>
-                <p>We ensure affordable per-km pricing for outstation trips and transparent fixed fares for airport transfers and oneway drops.</p>
+            <div class="info-content" style="background: #white; padding: 30px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.04);">
+                <h3>Taxi Fare & Booking Options in Coorg</h3>
+                <p>We ensure affordable per-km pricing for outstation trips and transparent fixed fares for airport transfers and sightseeing.</p>
                 <ul class="info-list" style="margin-bottom: 20px;">
                     <li class="info-list-item">
                         <i class="fas fa-car"></i>
-                        <span><strong>Hatchback / Dzire:</strong> Ideal for 4 passengers & city travel.</span>
+                        <span><strong>Hatchback / Dzire:</strong> Ideal for 4 passengers & economical local trips.</span>
                     </li>
                     <li class="info-list-item">
                         <i class="fas fa-car-side"></i>
-                        <span><strong>Toyota Etios:</strong> Spacious trunk space for luggage & outstation trips.</span>
+                        <span><strong>Toyota Etios:</strong> Extra luggage room, perfect for outstation drop transfers.</span>
                     </li>
                     <li class="info-list-item">
                         <i class="fas fa-shuttle-van"></i>
-                        <span><strong>Innova / Crysta:</strong> Premium 7-seater comfort for family travel.</span>
+                        <span><strong>Innova / Crysta:</strong> Premium comfort for families on winding mountain roads.</span>
                     </li>
                     <li class="info-list-item">
                         <i class="fas fa-bus"></i>
-                        <span><strong>Tempo Traveller:</strong> Ideal for 12 to 16 passenger group trips.</span>
+                        <span><strong>Tempo Traveller:</strong> Comfort and fun for groups of 12 to 16 passengers.</span>
                     </li>
                 </ul>
-                <a href="tel:9187710319" class="btn-yellow" style="width: 100%;">
-                    <i class="fas fa-phone-alt"></i> CALL +91 9187710319 FOR QUOTE
+                <a href="tel:+916361659021" class="btn-yellow" style="width: 100%;">
+                    <i class="fas fa-phone-alt"></i> CALL +91 6361659021 FOR QUOTE
                 </a>
             </div>
         </div>
@@ -1927,51 +478,51 @@
         <div class="faq-container">
             <div class="faq-item active">
                 <div class="faq-question">
-                    <span>What is a Oneway Taxi Service and how does it work?</span>
+                    <span>What areas are covered in Coorg Local Sightseeing?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>With our Oneway Taxi Service, you only pay for the distance traveled from your pickup location in Bangalore to your destination city (e.g., Bangalore to Mysore or Ooty). You do NOT have to pay any return charges or double fares!</p>
+                    <p>Our standard local sightseeing covers Madikeri Fort, Raja's Seat, Abbey Falls, Dubare Elephant Camp, Bylakuppe Golden Temple (Kushalnagar), and Nisargadhama. We can also customize trips to Talakaveri or Bhagamandala.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How can I book a taxi with Kanasu Cabs in Bangalore?</span>
+                    <span>How can I book a taxi with SM Cabs Coorg?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Booking a taxi is fast and simple! You can fill out the booking form on our site to book via WhatsApp, call our 24/7 hotline at <strong>+91 9187710319</strong>, or send us a WhatsApp message directly. Our team will immediately confirm your cab.</p>
+                    <p>Booking is extremely straightforward! Fill out our booking query form to submit details directly over WhatsApp, call our helpline at <strong>+91 6361659021</strong>, or send us a text. We will quickly align on pricing and driver allocation.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Are toll taxes and driver allowance included in the fare?</span>
+                    <span>Which is the nearest airport to Coorg and do you provide transfers?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>We provide 100% transparent billing! Outstation fare quotes clearly state the per-km rate, driver allowance, and applicable state toll charges so there are zero hidden surprises during your trip.</p>
+                    <p>The nearest airports are Mysore Airport (MYQ - ~120 km), Mangalore Airport (IXE - ~140 km), and Bangalore Airport (BLR - ~280 km). We provide dedicated transfers to and from all these airports with advance booking.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Do you offer 24/7 Airport pickup and drop for Kempegowda Airport (BLR)?</span>
+                    <span>Are toll charges and parking fees included in the fare?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>Yes! We operate 24/7 airport taxi services covering all areas of Bangalore to and from Kempegowda International Airport with punctual pickups and zero flight delay penalty fees.</p>
+                    <p>We believe in transparent billing. Our quotes outline per-km charges and driver allowance. State toll taxes, parking fees, and entry fees are paid as actuals during the journey, or can be included upon request.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>What safety measures do Kanasu Cabs follow?</span>
+                    <span>Are your drivers experienced on mountain roads?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    <p>All our taxis undergo regular maintenance checks and deep cleaning/sanitization before every ride. Our drivers are background-checked, experienced on highway routes, and follow strict safety guidelines.</p>
+                    <p>Absolutely! All SM Cabs Coorg drivers are highly experienced in navigating ghat roads, hairpin bends, and misty conditions typical of Coorg and neighboring regions like Ooty and Wayanad.</p>
                 </div>
             </div>
         </div>
@@ -1987,7 +538,7 @@
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="quote-icon">“</div>
-                <p class="testimonial-text">Excellent oneway taxi service from Bangalore to Mysore! The driver was polite, punctual, and the Innova Crysta was spotless. Saved money by paying only one-way drop fare.</p>
+                <p class="testimonial-text">Excellent sightseeing tour around Madikeri! The driver was very knowledgeable about the spots and the Innova Crysta was spotless. Highly recommend SM Cabs Coorg.</p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -2003,7 +554,7 @@
 
             <div class="testimonial-card">
                 <div class="quote-icon">“</div>
-                <p class="testimonial-text">We booked an airport transfer from Whitefield to BLR Airport at 3 AM. The cab arrived 10 minutes early. Professional drivers and transparent pricing!</p>
+                <p class="testimonial-text">We booked an airport transfer from Mangalore Airport to our resort in Madikeri. The cab was waiting for us before landing. Professional service and transparent pricing!</p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -2013,13 +564,13 @@
                 </div>
                 <div class="client-info">
                     <h4>Priya S.</h4>
-                    <span>Bangalore</span>
+                    <span>Mumbai</span>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <div class="quote-icon">“</div>
-                <p class="testimonial-text">Very reliable taxi service for Mysore and Coorg trips. Reasonable per-km rates with zero hidden charges. Highly recommended Kanasu Cabs!</p>
+                <p class="testimonial-text">Highly recommended cab service for anyone visiting Coorg. Their cars are clean, and the booking process via WhatsApp is quick and easy. Extremely reliable.</p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -2029,7 +580,7 @@
                 </div>
                 <div class="client-info">
                     <h4>Arjun M.</h4>
-                    <span>Bangalore</span>
+                    <span>Mysore</span>
                 </div>
             </div>
         </div>
@@ -2040,9 +591,9 @@
         <div class="cta-container">
             <div class="cta-content">
                 <h2>Ready to Book Your Taxi Ride?</h2>
-                <p>Get the best travel experience with Kanasu Cabs in Bangalore.</p>
-                <a href="tel:9187710319" class="btn-yellow">
-                    <i class="fas fa-phone-alt"></i> CALL NOW: +91 9187710319
+                <p>Get the best travel experience in Coorg with SM Cabs Coorg.</p>
+                <a href="tel:+916361659021" class="btn-yellow">
+                    <i class="fas fa-phone-alt"></i> CALL NOW: +91 6361659021
                 </a>
             </div>
 
@@ -2050,7 +601,7 @@
                 <div class="badge-circle">
                     <span>100% BEST PRICE GUARANTEED</span>
                 </div>
-                <img src="images/kanasucabs.jpg" alt="Book Ride Car" class="cta-car-img">
+                <img src="images/smcabscoorgg.jpg" alt="Book Ride Car" class="cta-car-img">
             </div>
         </div>
     </section>
@@ -2058,19 +609,12 @@
     <!-- DYNAMIC FOOTER PLACEHOLDER -->
     <div id="footer-placeholder"></div>
 
+    <!-- Script References -->
     <script src="js/include.js"></script>
 
     <!-- JAVASCRIPT FOR INTERACTIVITY & FAQ ACCORDION -->
     <script>
-        // Mobile Toggle Menu
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        mobileToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Form Tabs Selection (Oneway / Outstation / Airport / Local)
+        // Form Tabs Selection (Sightseeing / Airport / Outstation / Oneway)
         function selectTab(btn, type) {
             document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
             btn.classList.add('active');
@@ -2078,17 +622,17 @@
             const pickupInput = document.getElementById('pickupLocation');
             const dropInput = document.getElementById('dropLocation');
 
-            if (type === 'oneway') {
-                pickupInput.placeholder = "Pickup Location (Bangalore)";
-                dropInput.placeholder = "Drop Destination (e.g. Mysore, Ooty)";
+            if (type === 'sightseeing') {
+                pickupInput.placeholder = "Pickup Location (e.g. Madikeri)";
+                dropInput.placeholder = "Sightseeing Option (e.g. Local 1-Day)";
             } else if (type === 'airport') {
-                pickupInput.placeholder = "Pickup (Bangalore City / Airport)";
-                dropInput.placeholder = "Drop (Airport / Bangalore City)";
-            } else if (type === 'local') {
-                pickupInput.placeholder = "Pickup Location in Bangalore";
-                dropInput.placeholder = "Package (4hr/40km, 8hr/80km, 12hr/120km)";
+                pickupInput.placeholder = "Pickup (Airport / Coorg Hotel)";
+                dropInput.placeholder = "Drop (Coorg Hotel / Airport)";
+            } else if (type === 'oneway') {
+                pickupInput.placeholder = "Pickup Location in Coorg";
+                dropInput.placeholder = "Drop Destination (e.g. Mysore, Bangalore)";
             } else {
-                pickupInput.placeholder = "Pickup Location (Bangalore)";
+                pickupInput.placeholder = "Pickup Location in Coorg";
                 dropInput.placeholder = "Drop Destination / Outstation Route";
             }
         }
@@ -2107,7 +651,7 @@
             });
         });
 
-        // Form Submission Handler -> Submits directly via WhatsApp with dd-mm-YYYY date format
+        // Form Submission Handler -> Submits directly via WhatsApp
         function handleFormSubmit(event) {
             event.preventDefault();
             
@@ -2121,7 +665,7 @@
             const message = document.getElementById('userMessage').value.trim();
 
             const activeTab = document.querySelector('.form-tab.active');
-            const tripType = activeTab ? activeTab.innerText : 'Oneway Taxi';
+            const tripType = activeTab ? activeTab.innerText : 'Sightseeing';
 
             // Format date as dd-mm-YYYY
             let formattedDate = rawDate;
@@ -2132,13 +676,13 @@
                 }
             }
 
-            let text = `*New Taxi Booking Request - Kanasu Cabs*%0A` +
+            let text = `*New Taxi Booking Request - SM Cabs Coorg*%0A` +
                 `----------------------------------------%0A` +
                 `*Name:* ${encodeURIComponent(name)}%0A` +
                 `*Mobile:* ${encodeURIComponent(mobile)}%0A` +
                 `*Trip Type:* ${encodeURIComponent(tripType)}%0A` +
                 `*Pickup Location:* ${encodeURIComponent(pickup)}%0A` +
-                `*Drop Location:* ${encodeURIComponent(drop)}%0A` +
+                `*Destination:* ${encodeURIComponent(drop)}%0A` +
                 `*Date:* ${encodeURIComponent(formattedDate)}%0A` +
                 `*Car Selected:* ${encodeURIComponent(carText)}%0A`;
                 
@@ -2146,7 +690,7 @@
                 text += `*Special Instructions:* ${encodeURIComponent(message)}%0A`;
             }
 
-            const whatsappUrl = `https://wa.me/919187710319?text=${text}`;
+            const whatsappUrl = `https://wa.me/916361659021?text=${text}`;
             window.open(whatsappUrl, '_blank');
         }
     </script>
